@@ -1,0 +1,22 @@
+
+
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.origin-destination{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 30%;
+    border: 1px solid #BBBBBB;
+    padding: 10px 10px;
+}
