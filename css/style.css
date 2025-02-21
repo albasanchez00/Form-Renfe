@@ -6,6 +6,23 @@
     text-decoration: none;
   }
   
+
+header{
+    display: flex;
+    background: linear-gradient(90deg, #db3747 0%, #81005e 40%, #81005e 60%, #1c537f 100%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    h1{
+        color: white;
+        font-size: 24px;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
   body {
     display: flex;
     flex-direction: column;
@@ -27,45 +44,179 @@
     color:#D62D61;
     width: 12px;
     height: 12px;
-} 
+}
+.icon-separador{
+    width: 32px;
+    height: 32px;
+}
  /* Fin Iconos */ 
+
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 75px;
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        border-bottom: 1px solid #BBBBBB;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        li{
+            margin: 10px 10px;
+            a{
+                color: #81005E;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+/* Inicio Formulario Responsive */
+@media screen and (max-width: 1023px){
+    body form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    body .section-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        margin: 0 0;
+        width: 80vw;
+    }
+    body .icon-separador{
+        width: 32px;
+        height: 32px;
+    }
+
+    body .origin-destination, .origin-fechas{
+        width: 100%;
+    }
+
+    body .origin-pasajeros{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        div{
+            padding: 0 10px;
+        }
+    }
+
+    body .section-descuento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin: 10px 0;
+        padding: 0 10px;
+    }
+
+    #nPasajeros{
+        border: none;
+    } 
+    #pasajeros{
+        width: 70px;
+        border: none;
+    }
+    
+
+     body .section-form-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #BBBBBB;
+        border-radius: 10px;
+        padding: 10px 10px;
+        margin: 10px 10px;
+     }
+     
+     body .section-form-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+        margin: 10px 10px;
+        div{
+            height: 70px;
+            display: flex;
+            border: 1px solid #BBBBBB;
+            border-radius: 10px;
+            align-items: center;
+            flex-wrap: nowrap;
+            font-size: 10px;
+        }
+        p{
+            margin: 0 10px;
+        }
+        .calendar{
+            width: 12px;
+            height: 12px;
+        }
+     }
+}
+/*  Fin Formulario Responsive  */
 
 
  /*  Inicio Formulario  */
  form{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 12px;
  }
 
  .section-form{
     display: flex;
-    align-items: center;
-    width: 100vw;
-    margin: 20px 0;
-    padding: 15px 15px;
- }
-
- .section-descuento{
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     margin: 20px 0;
+    padding: 0 15px;
  }
 
-.origin-destination, .origin-fechas{
+ .section-form-1 div{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    flex-wrap: nowrap;
     align-items: center;
-    width: 30%;
+    width: 100%;
     height: 65px;
-    border: 1px solid #BBBBBB;
+    border-radius: 10px;
     padding: 10px 10px;
-}
+    margin: 0 10px;
+ }
+ 
+ .section-form-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #BBBBBB;
+    border-radius: 10px;
+ }
 
 
 .origin-pasajeros{
@@ -76,13 +227,17 @@
     width: 15%;
     height: 65px;
     border: 1px solid #BBBBBB;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px 10px;
+    margin: 0 10px;
     img{
         width: 16px;
         height: 16px;
     }
 }
+
+
+
 /*  Fin Formulario  */
 
 
@@ -96,6 +251,7 @@
     font-size: 16px;
     width: 150px;
     height: 65px;
+    margin: 0 10px;
   }
 
 .btn-billete:hover {
@@ -105,6 +261,15 @@
 
 
 /* Inicio Seccion Descuentos */
+.section-descuento{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30vw;
+    padding: 0 30px;
+    margin: 20px 0;
+}
+
 .btn-descuento{
     background-color: #f8f9fa;
     color: rgb(37, 37, 37);
@@ -135,14 +300,37 @@ button label {
 
 /* Estilo para el contenido del modal */
 .modal-content {
+    display: flex;
     background-color: #fff;
     margin: 15% auto;
-    padding: 20px;
+    padding: 15px 20px;
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
     border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    height: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    h2{
+        margin-bottom: 20px;
+    }
+    input{
+        height: 40px;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    button{
+        background-color: #81005E;
+        color: #fff;
+        padding: 10px 5px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        width: 70px;
+        font-size: 14px;
+    }
 }
 
 /* Botón para cerrar el modal */
