@@ -16,28 +16,147 @@
   }
 
 
-form{
+ /* Inicio Iconos */
+ .calendar{
+    color:#D62D61;
+    width: 32px;
+    height: 32px;
+}
+
+.icon{
+    color:#D62D61;
+    width: 12px;
+    height: 12px;
+} 
+ /* Fin Iconos */ 
+
+
+ /*  Inicio Formulario  */
+ form{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+ }
+
+ .section-form{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin: 20px 0;
+    padding: 15px 15px;
+ }
+
+ .section-descuento{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-}
+    width: 100vw;
+    margin: 20px 0;
+ }
 
-
-
-.origin-destination{
+.origin-destination, .origin-fechas{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
     width: 30%;
+    height: 65px;
     border: 1px solid #BBBBBB;
     padding: 10px 10px;
 }
 
 
-.calendar{
-    color:#D62D61;
-    width: 32px;
-    height: 32px;
+.origin-pasajeros{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 15%;
+    height: 65px;
+    border: 1px solid #BBBBBB;
+    border-radius: 20px;
+    padding: 10px 10px;
+    img{
+        width: 16px;
+        height: 16px;
+    }
 }
+/*  Fin Formulario  */
+
+
+/* Inicio Boton Buscar Billetes */
+.btn-billete {
+    border: none;
+    background-color: #81005E;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 16px;
+    width: 150px;
+    height: 65px;
+  }
+
+.btn-billete:hover {
+    background-color: #D93D6D;
+  }
+/* Fin Boton Buscar Billetes */
+
+
+/* Inicio Seccion Descuentos */
+.btn-descuento{
+    background-color: #f8f9fa;
+    color: rgb(37, 37, 37);
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+button label {
+    cursor: pointer;
+}
+
+/* Estilo del modal: cubre toda la pantalla y está oculto por defecto */
+.modal {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+    overflow: auto;
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* Botón para cerrar el modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+/* Fin Seccion Descuentos */
