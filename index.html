@@ -20,31 +20,54 @@
                 <form action="index.html" method="get">
                     <div class="origin-destination">
                         <p>
+                            <img src="./image/route-ida.png" alt="origen">
                             <label for="origen">Origen:</label>
                             <input type="text" id="origen" name="origen">
                         </p>
                         <p>
+                            <img src="./image/route.png" alt="dsetino">
                             <label for="destino">Destino:</label>
                             <input type="text" id="destino" name="destino">
                         </p>
                     </div>
                     <div class="origin-destination">
                         <p>
+                            <img class="calendar" src="./image/calendar-icon.svg" alt="fEntrada">
                             <label for="entrada">Dia de llegada:</label>
                             <input type="date" id="fechaLlegada" name="entrada">
                         </p>
                         <p>
+                            <img class="calendar" src="./image/calendar-icon.svg" alt="fSalida">
                             <label for="">Dia de salida:</label>
                             <input type="date" id="fechaIda" name="salida">
                         </p>
                     </div>
-                    
                     <div class="origin-destination">
+                        <img src="./image/user.png" alt="person-icon">
                         <p>
-                            <label for="pasajero">Dia de llegada:</label>
-                            <input type="date" id="tipoPasajero" name="pasajero">
+                            <label for="pasajero">Pasajeros:</label>
+                            <select name="pasajero" id="pasajeros">
+                                <option value="adultos">Adultos</option>
+                                <option value="ninios">Niños</option>
+                                <option value="bebesN">Bebés/Niños</option>
+                            </select>
+                            <select name="numeroPasajeros" id="nPasajeros">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="5">6</option>
+                                <option value="5">7</option>
+                                <option value="5">8</option>
+                                <option value="5">9</option>
+                                <option value="5">10</option>
+                            </select>
                         </p>
                     </div>
+                    <p>
+                        <button id="billetes" name="buscarBillete">Buscar Billet</button>
+                    </p>
                 </form>
             </section>
         </section>
